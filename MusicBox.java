@@ -38,9 +38,15 @@ public class MusicBox {
         return spanishState;
     }
     public void playSong(String songName, ArrayList<String> lyrics) {
-        System.out.println(songName);
-        for (int a = 0; a < lyrics.size(); a++) {
-            System.out.println(lyrics.get(a));
+        try {
+            System.out.println(songName);
+            for (int a = 0; a < lyrics.size(); a++) {
+                System.out.println(lyrics.get(a));
+                Thread.sleep(500);
+            }
+        }
+        catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 }

@@ -12,7 +12,8 @@ public class SpanishState implements State {
         while (!catcher.equals("6")) {
             catcher = lyrics.substring(sequencer, lyrics.indexOf(" "));
             lyrics = lyrics.substring(lyrics.indexOf(" ")+1);
-            arr.add(catcher);
+            if (!catcher.equals("6"))
+                arr.add(catcher);
         }
         box.playSong("Centellea, centellea, estrellita", arr);
     }
@@ -24,7 +25,8 @@ public class SpanishState implements State {
         while (!catcher.equals("6")) {
             catcher = lyrics.substring(sequencer, lyrics.indexOf(" "));
             lyrics = lyrics.substring(lyrics.indexOf(" ")+1);
-            arr.add(catcher);
+            if (!catcher.equals("6"))
+                arr.add(catcher);
         }
         box.playSong("Si eres feliz y lo sabes", arr);
     }
